@@ -14,6 +14,7 @@ self._prev = set(_children)은 튜플 -> 집합 변환으로 _children(a, a)는 
 같은 노드가 두 번 들어와도 그래프상 부모 노드는 하나면 됨
 
 - local gradient만 쓰고 upstream 곱하는 걸 빼먹음
+upstream의 gradient는 해당 지점까지 도달하는 동안 최종 값에 대한 영향이 얼마나 누적되었는지 담은 값이고, 그걸 계속 아래로 전달하면서 각자의 local 미분 값을 곱하는 과정임
 grad = 부모 grad * local
 
 - .data는 값, .grad는 그 값이 L에 주는 영향(dL/d해당값)
