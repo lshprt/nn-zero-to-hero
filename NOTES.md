@@ -27,3 +27,8 @@ grad = 부모 grad * local
 
 - chain rule 할 때 
 b = a + a 나 f = d * e, d = a + b, e = a * b 같은 경우 backward 할 때 버그가 생겨서 gradient를 accumulate 해야함
+
+- isinstance는 정해놓은 특정 type이나 class에 따라 True 또는 False를 반환한다.
+
+- assert isinstance는 정해놓은 특정 type이나 class가 아니면 AssertionError를 뱉어낸다
+
