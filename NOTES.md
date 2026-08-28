@@ -24,3 +24,6 @@ grad = 부모 grad * local
 - gradient 계산할 때, f(x+h) - f(x) / h 활용하여 교차 검증
 
 - (자식의 grad) = (부모의 grad) * (부모를 자식으로 미분한 값) -> 부모의 grad = local derivative
+
+- chain rule 할 때 
+b = a + a 나 f = d * e, d = a + b, e = a * b 같은 경우 backward 할 때 버그가 생겨서 gradient를 accumulate 해야함
