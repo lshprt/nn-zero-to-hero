@@ -22,3 +22,5 @@ grad = 부모 grad * local
 - backprop은 결국 chain rule (dy/dx = dy/du * du/dx)를 이용하는 것
 
 - gradient 계산할 때, f(x+h) - f(x) / h 활용하여 교차 검증
+
+- (자식의 grad) = (부모의 grad) * (부모를 자식으로 미분한 값) -> 부모의 grad = local derivative
